@@ -1,20 +1,15 @@
 <template>
     <div id="app">
         <Header></Header>
-        <Breadcrumb name="频道名称" slug="slug" root="/slug" publishEnable="true">
+        <Breadcrumb name="剑三魔盒" slug="about" root="/about" :publishEnable="false">
             <img slot="logo" svg-inline src="./assets/img/logo.svg" />
             <Info />
         </Breadcrumb>
         <LeftSidebar>
             <Nav />
         </LeftSidebar>
-        <Main :withoutRight="false">
-            primary content
-            <!-- <Comment post-id="100"/> -->
-            <RightSidebar>
-                <Extend/>
-            </RightSidebar>
-            <Footer></Footer>
+        <Main :withoutRight="true">
+            <router-view />
         </Main>
     </div>
 </template>
@@ -22,7 +17,7 @@
 <script>
 import Info from '@/components/Info.vue';
 import Nav from '@/components/Nav.vue';
-import Extend from '@/components/Extend.vue';
+// import Extend from '@/components/Extend.vue';
 
     export default {
         name : 'App',
@@ -38,7 +33,7 @@ import Extend from '@/components/Extend.vue';
         components:{
             Info,
             Nav,
-            Extend,
+            // Extend,
         }
     }
 </script>

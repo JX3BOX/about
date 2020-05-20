@@ -2,17 +2,21 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 
 import Index from "../views/Index.vue";
-import List from "../views/List.vue";
-import View from "../views/View.vue";
-import Post from "../views/Post.vue";
+import Team from "../views/Team.vue";
+import Cop from "../views/Cop.vue";
+import Privacy from "../views/Privacy.vue";
+import Licence from "../views/Licence.vue";
+import Treaty from "../views/Treaty.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
     { path: '/', component: Index },
-    { path: '/list', component: List },
-    { path: '/view', component: View },
-    { path: '/post', component: Post },
+    { path: '/team', component: Team },
+    { path: '/cop', component: Cop },
+    { path: '/privacy', component: Privacy },
+    { path: '/licence', component: Licence },
+    { path: '/treaty', component: Treaty },
 ]
 
 const router = new VueRouter({
