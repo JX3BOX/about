@@ -15,7 +15,7 @@
 		<member list="3965" :duty="design" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-		<member list="17,372,44,1972" :duty="production" />
+		<member list="17,372,44,1972" :duty="diplomacy" />
 
 		<p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
@@ -38,9 +38,23 @@ export default {
                 172: "技术支持/前端",
                 6668: "应用服务/运维",
             },
-            production: [],
-            design: [],
-            diplomacy: [],
+            production: {
+				2 : 'PVE/PVX栏目建设',
+				15:'PVE栏目建设',
+				452:'PVX栏目建设/外宣',
+				37:'PVE栏目建设/文案',
+				30:'PVN栏目建设/测试',
+				11:'PVE栏目建设'
+			},
+            design: {
+				3965 : '美工小姐姐'
+			},
+            diplomacy: {
+				17:'PVE向',
+				372:'PVE向',
+				1972:'PVE向',
+				44:'PVE向',
+			},
         };
     },
     computed: {},
