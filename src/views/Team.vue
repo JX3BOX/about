@@ -9,7 +9,7 @@
 		<member list="8,5,172,6668" :duty="developer" />
 
         <el-divider content-position="left">产品</el-divider>
-		<member list="2,15,452,37,30,11" :duty="production" />
+		<member list="2,15,452,37,228,30,11" :duty="production" />
 
         <el-divider content-position="left">美术</el-divider>
 		<member list="3965" :duty="design" />
@@ -41,10 +41,11 @@ export default {
             production: {
 				2 : 'PVE/PVX栏目建设',
 				15:'PVE栏目建设',
-				452:'PVX栏目建设/外宣',
+                452:'PVX栏目建设/外宣',
+                228:'PVX栏目建设/外宣',
 				37:'PVE栏目建设/文案',
 				30:'PVN栏目建设/测试',
-				11:'PVE栏目建设'
+                11:'PVE栏目建设',
 			},
             design: {
 				3965 : '美工小姐姐'

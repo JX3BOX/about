@@ -74,6 +74,7 @@ const API =  __server + 'user/list'
         img{
             .fl;.mr(20px);
             .r(50%);
+            .size(68px);
         }
 
         span{
