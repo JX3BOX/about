@@ -15,7 +15,7 @@
 		<member list="3965" :duty="design" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-		<member list="17,372,44,1972,7570" :duty="diplomacy" />
+		<member list="17,372,44,1972,4122" :duty="diplomacy" />
 
 		<p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
