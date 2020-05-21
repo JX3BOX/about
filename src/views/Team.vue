@@ -56,6 +56,7 @@ export default {
 				1972:'PVE向',
 				44:'PVE向',
 				7570:'PVE向',
+				4122:'PVE向',
 			},
         };
     },
