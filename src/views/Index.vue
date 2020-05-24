@@ -1,7 +1,7 @@
 <template>
     <div class="m-about-index">
         <div class="u-banner">
-            <img src="" alt="" />
+            <img :src="banner" />
         </div>
 
         <div class="u-intro">
@@ -59,6 +59,7 @@
 </template>
 
 <script>
+import {__ossMirror} from '@jx3box/jx3box-common/js/jx3box.json'
 export default {
     name: "Index",
     props: [],
@@ -90,6 +91,7 @@ export default {
                     icon: "el-icon-s-promotion",
                 },
             ],
+            banner : __ossMirror + 'image/about/banner.png'
         };
     },
     computed: {},
