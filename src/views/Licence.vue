@@ -2,7 +2,6 @@
     <div class="m-about-licence">
         <h1>用户协议</h1>
         <div>
-            <p>JX3BOX用户协议</p>
             <p><span>修改日期：</span>2020.05.20</p>
             <p><span>重要提示：</span></p>
             <p>
