@@ -6,7 +6,7 @@
         <member list="8" :duty="admin" />
 
         <el-divider content-position="left">开发</el-divider>
-		<member list="8,5,172,6668" :duty="developer" />
+		<member list="8,5,172,6314" :duty="developer" />
 
         <el-divider content-position="left">产品</el-divider>
 		<member list="2,15,452,37,228,30,11" :duty="production" />
@@ -36,7 +36,7 @@ export default {
                 8: "CMS系统/应用服务/前端",
                 5: "中台系统/百科服务/前端",
                 172: "技术支持/前端",
-                6668: "应用服务/运维",
+                6314: "应用服务/运维",
             },
             production: {
 				2 : 'PVE/PVX栏目建设',
