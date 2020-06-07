@@ -8,14 +8,17 @@
         <el-divider content-position="left">开发</el-divider>
 		<member list="8,5,172,6314" :duty="developer" />
 
-        <el-divider content-position="left">产品</el-divider>
-		<member list="2,15,452,37,228,30,11" :duty="production" />
-
         <el-divider content-position="left">美术</el-divider>
-		<member list="3965" :duty="design" />
+		<member list="3965,4011" :duty="design" />
+
+        <el-divider content-position="left">外宣</el-divider>
+		<member list="452,228" :duty="diplomacy" />
+
+        <el-divider content-position="left">产品</el-divider>
+		<member list="2,15,37,30,11" :duty="production" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-		<member list="17,372,44,1972,4122" :duty="diplomacy" />
+		<member list="17,372,44,1972,4122" :duty="contributor" />
 
 		<p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
@@ -41,16 +44,19 @@ export default {
             production: {
 				2 : 'PVE/PVX栏目建设',
 				15:'PVE栏目建设',
-                452:'PVX栏目建设/外宣',
-                228:'PVX栏目建设/外宣',
 				37:'PVE栏目建设/文案',
 				30:'PVN栏目建设/测试',
                 11:'PVE栏目建设',
 			},
             design: {
-				3965 : '美工小姐姐'
-			},
-            diplomacy: {
+				3965 : '美工小姐姐',
+                4011 : '美工小哥哥'
+            },
+            diplomacy : {
+                452:'PVX栏目建设/官网微博',
+                228:'PVX栏目建设/对外合作',
+            },
+            contributor: {
 				17:'PVE向',
 				372:'PVE向',
 				1972:'PVE向',

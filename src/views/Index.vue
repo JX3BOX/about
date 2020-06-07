@@ -79,16 +79,40 @@ export default {
                     icon: "el-icon-trophy",
                 },
                 {
+                    name: "家园交流群",
+                    qq: 658035079,
+                    link: "https://jq.qq.com/?_wv=1027&k=mA07EfW3",
+                    icon: "el-icon-place",
+                },
+                {
+                    name: "记者审核团",
+                    qq: 132803375,
+                    link: "https://jq.qq.com/?_wv=1027&k=HkbVwNyL",
+                    icon: "el-icon-video-camera",
+                },
+                {
                     name: "团长交流群",
                     qq: 785597424,
                     link: "https://jq.qq.com/?_wv=1027&k=bpNtDAzA",
-                    icon: "el-icon-user-solid",
+                    icon: "el-icon-user",
                 },
                 {
                     name: "签约作者群",
                     qq: 978285140,
                     link: "https://jq.qq.com/?_wv=1027&k=rHqH70e3",
-                    icon: "el-icon-s-promotion",
+                    icon: "el-icon-collection",
+                },
+                {
+                    name: "团控作者群",
+                    qq: 608303480,
+                    link: "https://jq.qq.com/?_wv=1027&k=uSHHxdmd",
+                    icon: "el-icon-setting",
+                },
+                {
+                    name: "宏作者群",
+                    qq: 297985102,
+                    link: "https://jq.qq.com/?_wv=1027&k=ypz3InIy",
+                    icon: "el-icon-position",
                 },
             ],
             banner : __ossMirror + 'image/about/banner.png'
