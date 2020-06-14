@@ -15,10 +15,10 @@
 		<member list="452,228" :duty="diplomacy" />
 
         <el-divider content-position="left">产品</el-divider>
-		<member list="2,15,37,30,11" :duty="production" />
+		<member list="2,15,37,11" :duty="production" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-		<member list="17,372,44,1972,4122" :duty="contributor" />
+		<member list="17,1972,372,44,30,4122" :duty="contributor" />
 
 		<p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
@@ -45,7 +45,6 @@ export default {
 				2 : 'PVE/PVX栏目建设',
 				15:'PVE栏目建设',
 				37:'PVE栏目建设/文案',
-				30:'PVN栏目建设/测试',
                 11:'PVE栏目建设',
 			},
             design: {
@@ -57,6 +56,7 @@ export default {
                 228:'PVX栏目建设/对外合作',
             },
             contributor: {
+                30:'PVN向',
 				17:'PVE向',
 				372:'PVE向',
 				1972:'PVE向',
