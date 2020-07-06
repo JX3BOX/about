@@ -12,6 +12,10 @@
 			<i class="el-icon-connection"></i>
 			<div>胖叔叔配装器</div>
 		</div>
+		<div class="u-item">
+			<i class="el-icon-connection"></i>
+			<div>枫影插件集</div>
+		</div>
 	</div>
 </template>
 

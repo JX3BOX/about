@@ -17,8 +17,8 @@
         <el-divider content-position="left">产品</el-divider>
 		<member list="2,15,37,11" :duty="production" />
 
-        <el-divider content-position="left">贡献名单</el-divider>
-		<member list="17,1972,372,44,30,4122" :duty="contributor" />
+        <el-divider content-position="left">内容</el-divider>
+		<member list="17,1972,372,44,30,4122,1364,1101" :duty="contributor" />
 
 		<p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
@@ -63,6 +63,8 @@ export default {
 				44:'PVE向',
 				7570:'PVE向',
 				4122:'PVE向',
+				1364:'PVE向',
+				1101:'PVE向',
 			},
         };
     },

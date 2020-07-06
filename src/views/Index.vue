@@ -79,7 +79,7 @@ export default {
                     icon: "el-icon-trophy",
                 },
                 {
-                    name: "家园交流群",
+                    name: "休闲交流群",
                     qq: 658035079,
                     link: "https://jq.qq.com/?_wv=1027&k=mA07EfW3",
                     icon: "el-icon-place",
