@@ -73,7 +73,7 @@ export default {
                     icon: "el-icon-service",
                 },
                 {
-                    name: "成就讨论群",
+                    name: "百科小分队",
                     qq: 614370825,
                     link: "https://jq.qq.com/?_wv=1027&k=MFwMNVRb",
                     icon: "el-icon-trophy",
