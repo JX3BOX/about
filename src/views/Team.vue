@@ -6,7 +6,7 @@
         <member list="8" :duty="admin" />
 
         <el-divider content-position="left">开发</el-divider>
-		<member list="8,5,172,6314,16166" :duty="developer" />
+		<member list="8,5,172,6314,16166,8187" :duty="developer" />
 
         <el-divider content-position="left">美术</el-divider>
 		<member list="3965,4011" :duty="design" />
@@ -41,6 +41,7 @@ export default {
                 172: "技术支持/前端",
                 6314: "后端服务/运维",
                 16166: "后端服务/DBA",
+                8187: "后端服务/前端",
             },
             production: {
 				2 : 'PVE/PVX栏目建设',
