@@ -85,9 +85,9 @@ export default {
                     icon: "el-icon-place",
                 },
                 {
-                    name: "记者审核团",
-                    qq: 132803375,
-                    link: "https://jq.qq.com/?_wv=1027&k=HkbVwNyL",
+                    name: "剧情党讨论群",
+                    qq: 694244996,
+                    link: "https://jq.qq.com/?_wv=1027&k=H9jsQPEp",
                     icon: "el-icon-video-camera",
                 },
                 {
@@ -109,7 +109,7 @@ export default {
                     icon: "el-icon-setting",
                 },
                 {
-                    name: "宏作者群",
+                    name: "宏/工具作者群",
                     qq: 297985102,
                     link: "https://jq.qq.com/?_wv=1027&k=ypz3InIy",
                     icon: "el-icon-position",
