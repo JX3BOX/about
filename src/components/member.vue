@@ -35,7 +35,8 @@ const API =  __server + 'user/list'
         mounted:function(){
             axios.get(API,{
                 params : {
-                    uid : this.list
+                    uid : this.list,
+                    per : 20
                 }
             }).then((res) => {
 

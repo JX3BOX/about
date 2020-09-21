@@ -50,7 +50,7 @@
                     <div class="u-contact-item">
 						<i class="el-icon-message"></i>
 						<span>合作联系</span>
-						<b>rx6@qq.com</b>
+                        <a href="http://wpa.qq.com/msgrd?v=3&uin=17229398&site=qq&menu=yes">QQ : 17229398</a>
                     </div>
                 </el-col>
             </el-row>
@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import {__ossMirror} from '@jx3box/jx3box-common/js/jx3box.json'
+import {__ossMirror,__imgPath} from '@jx3box/jx3box-common/js/jx3box.json'
 export default {
     name: "Index",
     props: [],
@@ -115,7 +115,7 @@ export default {
                     icon: "el-icon-position",
                 },
             ],
-            banner : __ossMirror + 'image/about/banner.png'
+            banner : __imgPath + 'image/about/banner.png'
         };
     },
     computed: {},
