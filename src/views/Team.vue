@@ -18,10 +18,10 @@
         <member list="452,228,37" :duty="diplomacy" />
 
         <el-divider content-position="left">产品</el-divider>
-        <member list="2,15" :duty="production" />
+        <member list="2,15,11,16904" :duty="production" />
 
         <el-divider content-position="left">内容</el-divider>
-        <member list="11,17,1972,44,1364,1101,30" :duty="content" />
+        <member list="17,1972,44,1364,1101,30" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="372,4122" :duty="contributor" />
@@ -57,6 +57,8 @@ export default {
             production: {
                 2: "PVE/PVX向",
                 15: "PVE向",
+                11: "PVE向",
+                16904 : 'PVE向'
             },
             design: {
                 3965: "美工小姐姐",
@@ -68,7 +70,6 @@ export default {
                 37:"群组管理"
             },
             content: {
-                11: "PVE向",
                 17: "PVE向",
                 1972: "PVE向",
                 44: "PVE向",
