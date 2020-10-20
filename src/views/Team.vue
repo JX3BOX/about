@@ -7,12 +7,12 @@
 
         <el-divider content-position="left">开发</el-divider>
         <member
-            list="8,5,172,6314,16166,2021,1167,182,8187,24922,383"
+            list="8,5,172,6314,16166,2021,1167,182,8187,24922,27896,383"
             :duty="developer"
         />
 
         <el-divider content-position="left">设计</el-divider>
-        <member list="3965,4011" :duty="design" />
+        <member list="4011,3965" :duty="design" />
 
         <el-divider content-position="left">运营</el-divider>
         <member list="452,228,37" :duty="diplomacy" />
@@ -22,6 +22,9 @@
 
         <el-divider content-position="left">内容</el-divider>
         <member list="17,1972,44,1364,1101,30" :duty="content" />
+
+        <el-divider content-position="left">审核</el-divider>
+        <member list="3217,7898,2394,62" :duty="audit" />
 
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="372,4122" :duty="contributor" />
@@ -44,7 +47,7 @@ export default {
             developer: {
                 8: "全栈开发",
                 5: "全栈开发",
-                172: "前端开发",
+                172: "前端,iOS客户端",
                 6314: "全栈开发",
                 16166: "后端开发",
                 2021: "全栈开发",
@@ -52,6 +55,7 @@ export default {
                 182: "全栈开发",
                 8187: "全栈开发",
                 24922: "Android客户端",
+                27896:"前端开发",
                 383:"前端开发"
             },
             production: {
@@ -61,8 +65,8 @@ export default {
                 16904 : 'PVE向'
             },
             design: {
-                3965: "美工小姐姐",
                 4011: "美工小哥哥",
+                3965: "美工小姐姐",
             },
             diplomacy: {
                 452: "微博运营",
@@ -77,6 +81,12 @@ export default {
                 1364: "PVE向",
                 1101: "PVE向",
                 30: "PVN向"
+            },
+            audit : {
+                3217:"成就审核",
+                7898:"成就审核",
+                2394:"成就审核",
+                62:"成就审核"
             },
             contributor: {
                 372: "PVE向",
