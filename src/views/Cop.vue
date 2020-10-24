@@ -6,6 +6,10 @@
 
 		<div class="u-item">
 			<i class="el-icon-connection"></i>
+			<div>推栏APP</div>
+		</div>
+		<div class="u-item">
+			<i class="el-icon-connection"></i>
 			<div>茗伊插件集</div>
 		</div>
 		<div class="u-item">
