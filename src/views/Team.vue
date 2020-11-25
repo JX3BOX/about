@@ -7,7 +7,7 @@
 
         <el-divider content-position="left">开发</el-divider>
         <member
-            list="8,5,172,6314,16166,2021,29023,1167,182,8187,24922,27896"
+            list="8,5,172,6314,16166,2021,29023,1167,182,24922"
             :duty="developer"
         />
 
@@ -21,7 +21,7 @@
         <member list="2,15,11,16904" :duty="production" />
 
         <el-divider content-position="left">内容</el-divider>
-        <member list="17,1972,44,1364,1101,30" :duty="content" />
+        <member list="1101,17,1972,44,1364,30" :duty="content" />
 
         <el-divider content-position="left">审核</el-divider>
         <member list="3217,7898,2394,62" :duty="audit" />
