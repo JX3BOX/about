@@ -20,14 +20,6 @@
 			<i class="el-icon-connection"></i>
 			<div>枫影插件集</div>
 		</div>
-		<div class="u-item">
-			<i class="el-icon-connection"></i>
-			<div>战斗复盘</div>
-		</div>
-		<div class="u-item">
-			<i class="el-icon-connection"></i>
-			<div>战斗复盘</div>
-		</div>
 	</div>
 </template>
 

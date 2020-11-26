@@ -67,19 +67,19 @@ export default {
         return {
             group: [
                 {
-                    name: "官方反馈群",
+                    name: "官方反馈群（兑奖）",
                     qq: 2471800,
                     link: "https://jq.qq.com/?_wv=1027&k=k1aSaI93",
                     icon: "el-icon-service",
                 },
                 {
-                    name: "百科小分队",
+                    name: "百科小分队（成就）",
                     qq: 614370825,
                     link: "https://jq.qq.com/?_wv=1027&k=MFwMNVRb",
                     icon: "el-icon-trophy",
                 },
                 {
-                    name: "休闲交流群",
+                    name: "休闲交流群（家园捏脸）",
                     qq: 658035079,
                     link: "https://jq.qq.com/?_wv=1027&k=mA07EfW3",
                     icon: "el-icon-place",
@@ -91,19 +91,19 @@ export default {
                     icon: "el-icon-video-camera",
                 },
                 {
-                    name: "团长交流群",
+                    name: "团长交流群（副本）",
                     qq: 785597424,
                     link: "https://jq.qq.com/?_wv=1027&k=bpNtDAzA",
                     icon: "el-icon-user",
                 },
                 {
-                    name: "签约作者群",
+                    name: "签约作者群（职业KOL）",
                     qq: 978285140,
                     link: "https://jq.qq.com/?_wv=1027&k=rHqH70e3",
                     icon: "el-icon-collection",
                 },
                 {
-                    name: "团控作者群",
+                    name: "团控作者群（插件数据）",
                     qq: 608303480,
                     link: "https://jq.qq.com/?_wv=1027&k=uSHHxdmd",
                     icon: "el-icon-setting",
