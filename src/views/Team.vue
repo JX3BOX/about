@@ -15,7 +15,7 @@
         <member list="4011,3965" :duty="design" />
 
         <el-divider content-position="left">运营</el-divider>
-        <member list="452,228,37,6917" :duty="diplomacy" />
+        <member list="452,228,37,6917,383" :duty="diplomacy" />
 
         <el-divider content-position="left">产品</el-divider>
         <member list="2,15,11,16904" :duty="production" />
@@ -73,7 +73,8 @@ export default {
                 452: "微博运营",
                 228: "商务合作",
                 37:"群组管理",
-                6917 : "群组管理"
+                6917 : "群组管理",
+                383:"群组管理"
             },
             content: {
                 17: "PVE向",
