@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import {__ossMirror,__imgPath} from '@jx3box/jx3box-common/js/jx3box.json'
+import {__ossMirror,__imgPath} from '@jx3box/jx3box-common/data/jx3box.json'
 export default {
     name: "Index",
     props: [],

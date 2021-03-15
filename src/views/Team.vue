@@ -7,7 +7,7 @@
 
         <el-divider content-position="left">开发</el-divider>
         <member
-            list="8,5,172,6314,16166,2021,29023,1167,182,24922"
+            list="8,5,172,6314,7,1167,2021,29023,182,24922,16166"
             :duty="developer"
         />
 
@@ -15,7 +15,7 @@
         <member list="4011,3965" :duty="design" />
 
         <el-divider content-position="left">运营</el-divider>
-        <member list="452,228,37,6917,383" :duty="diplomacy" />
+        <member list="452,228,37,383" :duty="diplomacy" />
 
         <el-divider content-position="left">产品</el-divider>
         <member list="2,15,11,16904" :duty="production" />
@@ -58,6 +58,7 @@ export default {
                 24922: "Android客户端",
                 27896:"前端开发",
                 383:"前端开发",
+                7:"前端开发"
             },
             production: {
                 2: "PVE/PVX向",
@@ -73,7 +74,6 @@ export default {
                 452: "微博运营",
                 228: "商务合作",
                 37:"群组管理",
-                6917 : "群组管理",
                 383:"群组管理"
             },
             content: {

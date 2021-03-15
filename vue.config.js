@@ -22,16 +22,22 @@ module.exports = {
     // },
 
     //❤️ Porxy ~
-    // devServer: {
-    //     proxy: {
-    //         "/api": {
-    //             "target": process.env["DEV_SERVER"] == "true" ? "http://localhost:51818" : "https://api.jx3box.com",
-    //             "onProxyReq": function (request) {
-    //                 request.setHeader("origin", "");
-    //             }
-    //         }
-    //     }
-    // },
+    devServer: {
+        proxy: {
+            "/api/vip": {
+                "target": "https://pay.jx3box.com",
+                "onProxyReq": function (request) {
+                    request.setHeader("origin", "");
+                }
+            },
+            "/api/messages": {
+                "target": "https://helper.jx3box.com",
+                "onProxyReq": function (request) {
+                    request.setHeader("origin", "");
+                }
+            },
+        }
+    },
 
     //❤️ define path for static files ~
     publicPath:

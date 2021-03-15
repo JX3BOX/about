@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import { getConfig, getArticle } from "@jx3box/jx3box-common/js/server.js";
+import { getConfig, getArticle } from "@/service/axios.js";
 export default {
     name: "Licence",
     props: [],
