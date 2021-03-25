@@ -26,7 +26,7 @@
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="17,1972,1364,30,372,4122" :duty="contributor" />
 
-        <p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
+        <p class="u-join">❤️ 欢迎<a href="/bbs/21899/" target="_blank">加入我们</a></p>
     </div>
 </template>
 
