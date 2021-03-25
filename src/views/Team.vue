@@ -14,20 +14,17 @@
         <el-divider content-position="left">设计</el-divider>
         <member list="4011,3965" :duty="design" />
 
-        <el-divider content-position="left">运营</el-divider>
+        <el-divider content-position="left">运营/市场</el-divider>
         <member list="452,228,37,383" :duty="diplomacy" />
 
-        <el-divider content-position="left">产品</el-divider>
-        <member list="2,15,11,16904" :duty="production" />
+        <el-divider content-position="left">产品/内容</el-divider>
+        <member list="2,15,1101,11,16904" :duty="production" />
 
-        <el-divider content-position="left">内容</el-divider>
-        <member list="1101,17,1972,44,1364,30" :duty="content" />
-
-        <el-divider content-position="left">审核</el-divider>
-        <member list="3217,7898,2394,62" :duty="audit" />
+        <el-divider content-position="left">品控/审核</el-divider>
+        <member list="44,7898,2394,62,3217" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-        <member list="372,4122" :duty="contributor" />
+        <member list="17,1972,1364,30,372,4122" :duty="contributor" />
 
         <p class="u-join">❤️ 欢迎加入我们 admin@jx3box.com</p>
     </div>
@@ -60,12 +57,6 @@ export default {
                 383:"前端开发",
                 7:"前端开发"
             },
-            production: {
-                2: "PVE/PVX向",
-                15: "PVE向",
-                11: "PVE向",
-                16904 : 'PVE向'
-            },
             design: {
                 4011: "美工小哥哥",
                 3965: "美工小姐姐",
@@ -76,24 +67,28 @@ export default {
                 37:"群组管理",
                 383:"群组管理"
             },
-            content: {
-                17: "PVE向",
-                1972: "PVE向",
-                44: "PVE向",
-                7570: "PVE向",
-                1364: "PVE向",
+            production: {
+                2: "PVE/PVX向",
+                15: "PVE向",
                 1101: "PVE向",
-                30: "PVN向"
+                11: "PVE向",
+                16904 : 'PVE向'
             },
-            audit : {
-                3217:"成就审核",
-                7898:"成就审核",
-                2394:"成就审核",
-                62:"成就审核"
+            content: {
+                44: "宏库",
+                7898:"百科",
+                2394:"百科",
+                3217:"百科",
+                62:"百科",
+                7570: "PVE向",
             },
             contributor: {
                 372: "PVE向",
                 4122: "PVE向",
+                17: "PVE向",
+                1972: "PVE向",
+                1364: "PVE向",
+                30: "PVN向"
             },
         };
     },
