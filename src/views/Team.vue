@@ -7,7 +7,7 @@
 
         <el-divider content-position="left">开发</el-divider>
         <member
-            list="8,5,172,6314,7,1167,2021,29023,182,24922,16166"
+            list="8,5,172,6314,7,1167,2021,29023,182,24922,16166,7898"
             :duty="developer"
         />
 
@@ -21,7 +21,7 @@
         <member list="2,15,1101,11,16904" :duty="production" />
 
         <el-divider content-position="left">品控/审核</el-divider>
-        <member list="44,7898,2394,62,3217" :duty="content" />
+        <member list="44,2394,62,3217" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="17,1972,1364,30,372,4122" :duty="contributor" />
@@ -55,7 +55,8 @@ export default {
                 24922: "Android客户端",
                 27896:"前端开发",
                 383:"前端开发",
-                7:"前端开发"
+                7:"前端开发",
+                7898:"后端开发",
             },
             design: {
                 4011: "美工小哥哥",
