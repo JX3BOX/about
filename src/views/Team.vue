@@ -7,7 +7,7 @@
 
         <el-divider content-position="left">开发</el-divider>
         <member
-            list="8,5,172,6314,7,1167,2021,29023,182,24922,16166,7898"
+            list="8,5,172,6314,7,9527,1167,2021,29023,182,24922,16166"
             :duty="developer"
         />
 
@@ -15,16 +15,16 @@
         <member list="4011,3965" :duty="design" />
 
         <el-divider content-position="left">运营/市场</el-divider>
-        <member list="452,228,37,383" :duty="diplomacy" />
+        <member list="452,228,37,383,8489" :duty="diplomacy" />
 
         <el-divider content-position="left">产品/内容</el-divider>
-        <member list="2,15,1101,11,16904" :duty="production" />
+        <member list="2,15,1101,11,16904,7898" :duty="production" />
 
-        <el-divider content-position="left">品控/审核</el-divider>
-        <member list="44,2394,62,3217" :duty="content" />
+        <el-divider content-position="left">编辑/审核</el-divider>
+        <member list="44,2394,62,3217,2932,20273,49682,1941,49990" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
-        <member list="17,1972,1364,30,372,4122" :duty="contributor" />
+        <member list="17,1972,1364,30,372" :duty="contributor" />
 
         <p class="u-join">❤️ 欢迎<a href="/bbs/21899/" target="_blank">加入我们</a></p>
     </div>
@@ -44,7 +44,7 @@ export default {
             developer: {
                 8: "全栈开发",
                 5: "全栈开发",
-                172: "前端,iOS客户端",
+                172: "全栈开发",
                 6314: "全栈开发",
                 16166: "后端开发",
                 2021: "插件开发",
@@ -56,7 +56,7 @@ export default {
                 27896:"前端开发",
                 383:"前端开发",
                 7:"前端开发",
-                7898:"后端开发",
+                9527:"前端开发"
             },
             design: {
                 4011: "美工小哥哥",
@@ -66,14 +66,16 @@ export default {
                 452: "微博运营",
                 228: "商务合作",
                 37:"群组管理",
-                383:"群组管理"
+                383:"群组管理",
+                8489:"头条新闻",
             },
             production: {
                 2: "PVE/PVX向",
                 15: "PVE向",
                 1101: "PVE向",
                 11: "PVE向",
-                16904 : 'PVE向'
+                16904 : 'PVE向',
+                7898:"PVE/PVX向",
             },
             content: {
                 44: "宏库",
@@ -81,11 +83,15 @@ export default {
                 2394:"百科",
                 3217:"百科",
                 62:"百科",
-                7570: "PVE向",
+                7570: "百科",
+                2932: "百科",
+                20273: "百科",
+                49682: "百科",
+                1941: "百科",
+                49990: "百科",
             },
             contributor: {
                 372: "PVE向",
-                4122: "PVE向",
                 17: "PVE向",
                 1972: "PVE向",
                 1364: "PVE向",
