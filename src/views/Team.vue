@@ -21,7 +21,7 @@
         <member list="2,15,1101,11,16904,7898" :duty="production" />
 
         <el-divider content-position="left">编辑/审核</el-divider>
-        <member list="44,2394,62,3217,2932,20273,49682,1941,49990" :duty="content" />
+        <member list="44,904,2394,62,3217,2932,20273,49682,1941,49990" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="17,1972,1364,30,372" :duty="contributor" />
@@ -80,6 +80,7 @@ export default {
             },
             content: {
                 44: "宏库",
+                904: "宏库",
                 7898:"百科",
                 2394:"百科",
                 3217:"百科",
