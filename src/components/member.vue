@@ -11,91 +11,80 @@
 </template>
 
 <script>
-import axios from 'axios'
-import {__server } from '@jx3box/jx3box-common/data/jx3box.json'
-import {authorLink,showAvatar} from '@jx3box/jx3box-common/js/utils'
-const API =  __server + 'user/list'
-    export default {
-        name : 'member',
-        props:['list','duty'],
-        data : function(){
-            return {
-                data : '',
-            }
+import { getUsers } from "@/service/axios.js";
+import { authorLink, showAvatar } from "@jx3box/jx3box-common/js/utils";
+export default {
+    name: "member",
+    props: ["list", "duty"],
+    data: function () {
+        return {
+            data: [],
+        };
+    },
+    computed: {},
+    filters: {
+        authorLink: function (uid) {
+            return authorLink(uid);
         },
-        computed:{},
-        filters:{
-            authorLink : function (uid){
-                return authorLink(uid)
-            },
-            showAvatar : function (url){
-                return showAvatar(url)
-            }
+        showAvatar: function (url) {
+            return showAvatar(url);
         },
-        mounted:function(){
-            axios.get(API,{
-                params : {
-                    uid : this.list,
-                    per : 20
-                }
-            }).then((res) => {
-
-                let data = res.data.data.list;
-                let sequence = this.list.split(',')
-                this.data = []
-                for(let uid of sequence){
-                    for(let o of data){
-                        if(o.ID == uid){
-                            o.duty = this.duty[o.ID]
-                            this.data.push(o)
-                        }
+    },
+    mounted: function () {
+        getUsers(this.list).then((data) => {
+            let sequence = this.list.split(',')
+            this.data = []
+            for(let uid of sequence){
+                for(let o of data){
+                    if(o.ID == uid){
+                        o.duty = this.duty[o.ID]
+                        this.data.push(o)
                     }
                 }
-            })
-        },
-        components : {
-        }
-    }
+            }
+        });
+    },
+    components: {},
+};
 </script>
 
 <style lang="less">
-.m-about-member{
-    .u-list{
+.m-about-member {
+    .u-list {
         .clearfix;
     }
-    .u-member{
+    .u-member {
         .db;
         .fl;
         .w(320px);
         .mr(20px);
         .mb(20px);
-        font-weight:300;
-        color:@color;
+        font-weight: 300;
+        color: @color;
 
-        img{
-            .fl;.mr(20px);
+        img {
+            .fl;
+            .mr(20px);
             .r(50%);
             .size(68px);
         }
 
-        span{
+        span {
             .lh(42px);
             .db;
         }
 
-        em{
+        em {
             .lh(18px);
             .db;
             .fz(12px);
         }
 
-        &:hover{
-            span{
-                color:@primary;
+        &:hover {
+            span {
+                color: @primary;
             }
         }
     }
 }
-
-    
 </style>

@@ -109,9 +109,9 @@ export default {
                     icon: "el-icon-setting",
                 },
                 {
-                    name: "签约作者群（职业KOL）",
-                    qq: 978285140,
-                    link: "https://jq.qq.com/?_wv=1027&k=rHqH70e3",
+                    name: "PVP交流群",
+                    qq: 769948201,
+                    link: "https://jq.qq.com/?_wv=1027&k=xsxyIsCg",
                     icon: "el-icon-collection",
                 },
             ],

@@ -1,5 +1,5 @@
 <template>
-    <div class="m-about-licence">
+    <div class="m-about-licence" v-loading="loading">
         <h1>用户协议</h1>
         <div v-html="data"></div>
     </div>
@@ -13,16 +13,20 @@ export default {
     data: function() {
         return {
             data: "",
+            loading : false
         };
     },
     computed: {},
     methods: {},
     mounted: function() {
+        this.loading = true
         getConfig("licence").then((id) => {
             getArticle(id).then((data) => {
                 this.data = data;
             });
-        });
+        }).finally(() => {
+            this.loading = false
+        })
     },
     components: {},
 };

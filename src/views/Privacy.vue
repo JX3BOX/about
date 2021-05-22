@@ -1,5 +1,5 @@
 <template>
-    <div class="m-about-privacy">
+    <div class="m-about-privacy" v-loading="loading">
         <h1>隐私政策</h1>
         <div v-html="data"></div>
     </div>
@@ -12,17 +12,21 @@ export default {
     props: [],
     data: function() {
         return {
-            data : ''
+            data : '',
+            loading : false
         };
     },
     computed: {},
     methods: {},
     mounted: function() {
+        this.loading = true
         getConfig("privacy").then((id) => {
             getArticle(id).then((data) => {
                 this.data = data;
             });
-        });
+        }).finally(() => {
+            this.loading = false
+        })
     },
     components: {},
 };
