@@ -15,13 +15,13 @@
         <member list="4011,3965" :duty="design" />
 
         <el-divider content-position="left">运营/市场</el-divider>
-        <member list="452,228,37,383,8489" :duty="diplomacy" />
+        <member list="452,228,37,8489" :duty="diplomacy" />
 
         <el-divider content-position="left">产品/内容</el-divider>
         <member list="2,15,1101,11,16904,7898" :duty="production" />
 
         <el-divider content-position="left">编辑/审核</el-divider>
-        <member list="44,904,8418,10250,2394,62,3217,2932,20273,49682,1941,49990,23153" :duty="content" />
+        <member list="44,904,8418,10250,2394,62,3217,2932,20273,49682,1941,49990,23153,8414" :duty="content" />
 
         <el-divider content-position="left">贡献名单</el-divider>
         <member list="17,1972,1364,30,372" :duty="contributor" />
@@ -67,7 +67,6 @@ export default {
                 452: "微博运营",
                 228: "商务合作",
                 37:"群组管理",
-                383:"群组管理",
                 8489:"头条新闻",
             },
             production: {
@@ -94,6 +93,7 @@ export default {
                 1941: "百科",
                 49990: "百科",
                 23153: "职业",
+                8414: "宏库",
             },
             contributor: {
                 372: "PVE向",
