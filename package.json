@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@jx3box/jx3box-common": "^6.4.8",
-    "@jx3box/jx3box-common-ui": "^4.6.4",
+    "@jx3box/jx3box-common-ui": "^4.6.7",
     "axios": "^0.21.1",
     "core-js": "^3.4.3",
     "element-ui": "^2.13.0",
@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@babel/compat-data": "^7.10.1",
+    "@babel/plugin-proposal-optional-chaining": "^7.14.5",
     "@vue/cli-plugin-babel": "^4.0.0",
     "@vue/cli-plugin-eslint": "^4.0.0",
     "@vue/cli-plugin-router": "^4.0.0",
