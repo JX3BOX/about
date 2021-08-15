@@ -44,6 +44,13 @@
                     src="../assets/img/logo.svg"
                 /><span>创作公约</span></router-link
             >
+            <router-link to="/incentives"
+                ><img
+                    class="u-incentives"
+                    svg-inline
+                    src="../assets/img/logo.svg"
+                /><span>创作激励</span></router-link
+            >
         </div>
     </nav>
 </template>

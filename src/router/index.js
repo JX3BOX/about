@@ -7,6 +7,7 @@ import Cop from "../views/Cop.vue";
 import Privacy from "../views/Privacy.vue";
 import Licence from "../views/Licence.vue";
 import Treaty from "../views/Treaty.vue";
+import Incentives from "../views/Incentives.vue";
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,7 @@ const routes = [
     { path: '/privacy', component: Privacy },
     { path: '/licence', component: Licence },
     { path: '/treaty', component: Treaty },
+    { path: '/incentives', component: Incentives },
 ]
 
 const router = new VueRouter({
