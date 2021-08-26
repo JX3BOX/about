@@ -91,9 +91,15 @@ export default {
                     icon: "el-icon-place",
                 },
                 {
-                    name: "团长交流群（副本/赛事）",
+                    name: "正式服团长群（副本/赛事）",
                     qq: 785597424,
                     link: "https://jq.qq.com/?_wv=1027&k=bpNtDAzA",
+                    icon: "el-icon-user",
+                },
+                {
+                    name: "怀旧服团长群（活动交流）",
+                    qq: 528707506,
+                    link: "https://jq.qq.com/?_wv=1027&k=XiDy5ZKI",
                     icon: "el-icon-user",
                 },
                 {
@@ -108,12 +114,12 @@ export default {
                     link: "https://jq.qq.com/?_wv=1027&k=uSHHxdmd",
                     icon: "el-icon-setting",
                 },
-                {
-                    name: "PVP交流群",
-                    qq: 769948201,
-                    link: "https://jq.qq.com/?_wv=1027&k=xsxyIsCg",
-                    icon: "el-icon-collection",
-                },
+                // {
+                //     name: "PVP交流群",
+                //     qq: 769948201,
+                //     link: "https://jq.qq.com/?_wv=1027&k=xsxyIsCg",
+                //     icon: "el-icon-collection",
+                // },
             ],
             banner : __imgPath + 'image/about/banner.png'
         };
