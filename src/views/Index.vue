@@ -97,7 +97,7 @@ export default {
                     icon: "el-icon-user",
                 },
                 {
-                    name: "怀旧服团长群（活动交流）",
+                    name: "怀旧服团长群（萌新教学）",
                     qq: 528707506,
                     link: "https://jq.qq.com/?_wv=1027&k=XiDy5ZKI",
                     icon: "el-icon-user",
