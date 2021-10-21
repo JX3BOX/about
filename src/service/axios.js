@@ -36,4 +36,8 @@ function getUsers(list) {
         });
 }
 
-export { getConfig, getArticle, getUsers };
+function getTeammates(){
+    return $cms().get(`/api/cms/config/teammates`)
+}
+
+export { getConfig, getArticle, getUsers, getTeammates };

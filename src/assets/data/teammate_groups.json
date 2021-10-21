@@ -1,0 +1,11 @@
+{
+    "group": {
+        "developer": "开发",
+        "designer": "设计",
+        "mp": "运营",
+        "production": "产品",
+        "author": "内容",
+        "editor": "编辑",
+        "contributors": "贡献名单"
+    }
+}

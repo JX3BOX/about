@@ -1,21 +1,20 @@
 <template>
-    <div class="m-about-member" v-if="data && list">
+    <div class="m-about-member" v-if="list">
         <div class="u-list">
-            <a class="u-member" :href="item.ID | authorLink" v-for="(item,i) in data" :key="i">
-                <img :src="item.user_avatar | showAvatar" />
-                <span>{{item.display_name}}</span>
-                <em>{{item.duty}}</em>
+            <a class="u-member" :href="item.user_id | authorLink" v-for="(item,i) in list" :key="i">
+                <img :src="item.teammate_info.user_avatar | showAvatar" />
+                <span>{{item.teammate_info.display_name}}</span>
+                <em>{{item.remark}}</em>
             </a>
         </div>
     </div>
 </template>
 
 <script>
-import { getUsers } from "@/service/axios.js";
 import { authorLink, showAvatar } from "@jx3box/jx3box-common/js/utils";
 export default {
     name: "member",
-    props: ["list", "duty"],
+    props: ["list"],
     data: function () {
         return {
             data: [],
@@ -31,18 +30,6 @@ export default {
         },
     },
     mounted: function () {
-        getUsers(this.list).then((data) => {
-            let sequence = this.list.split(',')
-            this.data = []
-            for(let uid of sequence){
-                for(let o of data){
-                    if(o.ID == uid){
-                        o.duty = this.duty[o.ID]
-                        this.data.push(o)
-                    }
-                }
-            }
-        });
     },
     components: {},
 };
