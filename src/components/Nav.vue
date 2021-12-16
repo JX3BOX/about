@@ -9,20 +9,20 @@
                     src="../assets/img/logo.svg"
                 /><span>关于我们</span></router-link
             >
-            <router-link to="/team"
+            <!-- <router-link to="/team"
                 ><img
                     class="u-team"
                     svg-inline
                     src="../assets/img/logo.svg"
                 /><span>团队成员</span></router-link
-            >
-            <router-link to="/cop"
+            > -->
+            <!-- <router-link to="/cop"
                 ><img
                     class="u-cop"
                     svg-inline
                     src="../assets/img/logo.svg"
                 /><span>合作伙伴</span></router-link
-            >
+            > -->
             <router-link to="/privacy"
                 ><img
                     class="u-privacy"

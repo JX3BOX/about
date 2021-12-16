@@ -2,29 +2,21 @@
     <div class="m-about-team">
         <h1>团队</h1>
 
-        <!-- <el-divider content-position="left">管理</el-divider> -->
-        <!-- <member list="8" :duty="admin" /> -->
-
-        <template v-for="item in temp">
-            <div class="m-about-team-item" :key="item">
-                <el-divider content-position="left">{{ item }}</el-divider>
-                <member
-                    :list="teammates[item]"
-                />
-            </div>
-        </template>
+        <div class="m-about-team-item" :key="group" v-for="(grouplabel,group) in usergroups">
+            <el-divider content-position="left">{{ grouplabel }}</el-divider>
+            <member :list="teammates[group]" />
+        </div>
 
         <p class="u-join">
-            ❤️ 欢迎
-            <a href="/bbs/21899/" target="_blank">加入我们</a>
+            ❤️ 欢迎<a href="/bbs/21899/" target="_blank">加入我们</a>
         </p>
     </div>
 </template>
 
 <script>
 import member from "../components/member";
-import {getTeammates} from  '@/service/axios'
-import {group} from '@/assets/data/teammate_groups.json'
+import { getTeammates } from "@/service/axios";
+import usergroups from "@/assets/data/usergroups.json";
 export default {
     name: "Team",
     props: [],
@@ -32,31 +24,29 @@ export default {
     data: function () {
         return {
             list: [],
-            
-            temp: ["开发", "设计", "运营", "产品", "内容", "编辑", "贡献名单"]
+            usergroups,
         };
     },
     computed: {
-        teammates: function (){
-            const obj = {}
+        teammates: function () {
+            const obj = {};
 
-            Object.entries(group).forEach(([key, value]) => {
-                obj[value] = this.list.filter(item => item.group === key)
+            Object.entries(usergroups).forEach(([key, value]) => {
+                obj[key] = this.list.filter((item) => item.group === key);
             });
 
-            return obj
-        }
-        
+            return obj;
+        },
     },
     methods: {
-        loadTeammates: function (){
-            getTeammates().then(res => {
-                this.list = res.data.data
-            })
-        }
+        loadTeammates: function () {
+            getTeammates().then((res) => {
+                this.list = res.data.data;
+            });
+        },
     },
     mounted: function () {
-        this.loadTeammates()
+        this.loadTeammates();
     },
     components: {
         member,

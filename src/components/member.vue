@@ -1,10 +1,15 @@
 <template>
-    <div class="m-about-member" v-if="list">
+    <div class="m-about-member" v-if="list && list.length">
         <div class="u-list">
-            <a class="u-member" :href="item.user_id | authorLink" v-for="(item,i) in list" :key="i">
+            <a
+                class="u-member"
+                :href="item.user_id | authorLink"
+                v-for="(item, i) in list"
+                :key="i"
+            >
                 <img :src="item.teammate_info.user_avatar | showAvatar" />
-                <span>{{item.teammate_info.display_name}}</span>
-                <em>{{item.remark}}</em>
+                <span>{{ item.teammate_info.display_name }}</span>
+                <em>{{ item.remark }}</em>
             </a>
         </div>
     </div>
@@ -29,8 +34,7 @@ export default {
             return showAvatar(url);
         },
     },
-    mounted: function () {
-    },
+    mounted: function () {},
     components: {},
 };
 </script>
