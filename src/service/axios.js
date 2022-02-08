@@ -37,7 +37,11 @@ function getUsers(list) {
 }
 
 function getTeammates(){
-    return $cms().get(`/api/cms/config/teammates`)
+    return $cms().get(`/api/cms/config/teammates`,{
+        params : {
+            status : 1
+        }
+    })
 }
 
 export { getConfig, getArticle, getUsers, getTeammates };

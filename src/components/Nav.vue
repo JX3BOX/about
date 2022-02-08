@@ -2,20 +2,8 @@
     <nav class="m-nav">
         <!-- <h5 class="u-title">账号设置</h5> -->
         <div class="m-nav-group">
-            <router-link to="/"
-                ><img
-                    class="u-index"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>关于我们</span></router-link
-            >
-            <!-- <router-link to="/team"
-                ><img
-                    class="u-team"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>团队成员</span></router-link
-            > -->
+            <router-link to="/"><img class="u-index" svg-inline src="../assets/img/logo.svg" /><span>关于我们</span></router-link>
+            <router-link to="/team"><img class="u-team" svg-inline src="../assets/img/logo.svg" /><span>团队成员</span></router-link>
             <!-- <router-link to="/cop"
                 ><img
                     class="u-cop"
@@ -23,34 +11,10 @@
                     src="../assets/img/logo.svg"
                 /><span>合作伙伴</span></router-link
             > -->
-            <router-link to="/privacy"
-                ><img
-                    class="u-privacy"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>隐私政策</span></router-link
-            >
-            <router-link to="/licence"
-                ><img
-                    class="u-licence"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>用户协议</span></router-link
-            >
-            <router-link to="/treaty"
-                ><img
-                    class="u-treaty"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>创作公约</span></router-link
-            >
-            <router-link to="/incentives"
-                ><img
-                    class="u-incentives"
-                    svg-inline
-                    src="../assets/img/logo.svg"
-                /><span>创作激励</span></router-link
-            >
+            <router-link to="/privacy"><img class="u-privacy" svg-inline src="../assets/img/logo.svg" /><span>隐私政策</span></router-link>
+            <router-link to="/licence"><img class="u-licence" svg-inline src="../assets/img/logo.svg" /><span>用户协议</span></router-link>
+            <router-link to="/treaty"><img class="u-treaty" svg-inline src="../assets/img/logo.svg" /><span>创作公约</span></router-link>
+            <router-link to="/incentives"><img class="u-incentives" svg-inline src="../assets/img/logo.svg" /><span>创作激励</span></router-link>
         </div>
     </nav>
 </template>

@@ -8,7 +8,7 @@
         </div>
 
         <p class="u-join">
-            ❤️ 欢迎<a href="/bbs/21899/" target="_blank">加入我们</a>
+            ❤️ 欢迎<a href="/notice/21899" target="_blank">加入我们</a>
         </p>
     </div>
 </template>

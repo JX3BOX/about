@@ -39,20 +39,20 @@
 
         <div class="u-contact">
             <el-row :gutter="20">
-                <el-col :span="12">
+                <el-col :span="24">
                     <div class="u-contact-item">
 						<i class="el-icon-message"></i>
 						<span>官方邮箱</span>
 						<b>admin@jx3box.com</b>
                     </div>
                 </el-col>
-                <el-col :span="12">
+                <!-- <el-col :span="12">
                     <div class="u-contact-item">
 						<i class="el-icon-message"></i>
 						<span>合作联系</span>
                         <a href="http://wpa.qq.com/msgrd?v=3&uin=17229398&site=qq&menu=yes">QQ : 17229398</a>
                     </div>
-                </el-col>
+                </el-col> -->
             </el-row>
         </div>
     </div>
