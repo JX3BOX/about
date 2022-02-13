@@ -1,7 +1,7 @@
 <template>
     <div class="m-about-index">
         <div class="u-banner">
-            <img :src="banner" />
+            <img :src="resolveImagePath(banner)" />
         </div>
 
         <div class="u-intro">
@@ -24,13 +24,7 @@
                         <h4>{{ item.name }}</h4>
                         <p>
                             <b>{{ item.qq }}</b>
-                            <a
-                                class="el-button el-button--primary el-button--mini is-plain"
-                                :href="item.link"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                >加入</a
-                            >
+                            <a class="el-button el-button--primary el-button--mini is-plain" :href="item.link" target="_blank" rel="noopener noreferrer">加入</a>
                         </p>
                     </div>
                 </el-col>
@@ -41,9 +35,9 @@
             <el-row :gutter="20">
                 <el-col :span="24">
                     <div class="u-contact-item">
-						<i class="el-icon-message"></i>
-						<span>官方邮箱</span>
-						<b>admin@jx3box.com</b>
+                        <i class="el-icon-message"></i>
+                        <span>官方邮箱</span>
+                        <b>admin@jx3box.com</b>
                     </div>
                 </el-col>
                 <!-- <el-col :span="12">
@@ -59,7 +53,9 @@
 </template>
 
 <script>
-import {__ossMirror,__imgPath} from '@jx3box/jx3box-common/data/jx3box.json'
+import { __ossMirror, __imgPath } from "@jx3box/jx3box-common/data/jx3box.json";
+import { resolveImagePath } from "@jx3box/jx3box-common/js/utils";
+import {getBreadcrumb} from '@jx3box/jx3box-common/js/api_misc'
 export default {
     name: "Index",
     props: [],
@@ -121,12 +117,17 @@ export default {
                 //     icon: "el-icon-collection",
                 // },
             ],
-            banner : __imgPath + 'image/about/banner.png'
+            // banner : __imgPath + 'image/about/banner.png'
+            banner: "https://oss.jx3box.com/upload/post/2022/2/13/8_6674008.png",
         };
     },
     computed: {},
-    methods: {},
-    mounted: function() {},
+    methods: {resolveImagePath},
+    mounted: function() {
+        getBreadcrumb('about_banner').then((data) => {
+            this.banner = data
+        })
+    },
     components: {},
 };
 </script>
