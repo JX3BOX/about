@@ -22,7 +22,7 @@
         },
         methods: {
             getAvatar: function(item) {
-                return showAvatar(item?.teammate_info?.user_avatar);
+                return showAvatar(item?.teammate_info?.user_avatar,'m');
             },
             getUsername: function(item) {
                 return item?.teammate_info?.display_name;
