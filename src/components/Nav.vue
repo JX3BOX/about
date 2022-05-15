@@ -12,7 +12,7 @@
                 /><span>合作伙伴</span></router-link
             > -->
             <router-link to="/privacy"><img class="u-privacy" svg-inline src="../assets/img/logo.svg" /><span>隐私政策</span></router-link>
-            <router-link to="/licence"><img class="u-licence" svg-inline src="../assets/img/logo.svg" /><span>用户协议</span></router-link>
+            <router-link to="/license"><img class="u-license" svg-inline src="../assets/img/logo.svg" /><span>用户协议</span></router-link>
             <router-link to="/treaty"><img class="u-treaty" svg-inline src="../assets/img/logo.svg" /><span>创作公约</span></router-link>
             <router-link to="/incentives"><img class="u-incentives" svg-inline src="../assets/img/logo.svg" /><span>创作激励</span></router-link>
         </div>
