@@ -3,13 +3,18 @@
         <div class="u-list" v-for="(item, i) in list" :key="i">
             <a class="u-member" :href="authorLink(item.user_id)">
                 <img :src="getAvatar(item)" />
-                <el-popover popper-class="m-about-popover" placement="right-start" trigger="hover" width="240">
+                <el-popover popper-class="m-about-popover" placement="right-start" trigger="hover" width="280">
                     <div class="u-user">
-                        <el-divider content-position="left">{{ getUsername(item) }}</el-divider>
-                        <div class="u-tags" v-if="item.duty && item.duty.length">
-                            <el-tag class="u-tag" size="small" v-for="key in item.duty" :key="key"> {{showTag(key)}} </el-tag>
+                        <div class="u-user-info">
+                            <img :src="getAvatar(item)" />
+                            <span class="u-txt">
+                                <span class="u-name">{{ getUsername(item) }}</span>
+                                <span class="u-tags">
+                                    <el-tag class="u-tag" size="small" v-for="key in item.duty" :key="key"> {{showTag(key)}} </el-tag>
+                                </span>
+                            </span>
                         </div>
-                        <span v-html="item.desc" v-if="item.desc"></span> <span v-else>暂无介绍</span>
+                        <div class="u-desc" v-html="item.desc || '暂无介绍'"></div>
                     </div>
                     <div slot="reference" class="u-info">
                         <span>{{ getUsername(item) }}</span>
@@ -95,13 +100,34 @@ export default {
             .flex;
             cursor: default;
             flex-direction: column;
-
-            .u-tags {
+            &-info {
+                .flex;
                 border-bottom: 1px solid #dcdfe6;
-                .pb(20px);
-                .u-tag {
-                    margin: 5px;
+                img {
+                    .size(48px);
+                    margin: 0 20px 10px 0;
                 }
+                .u-name {
+                    .bold;
+                    .fz(16px,2);
+                }
+                .u-txt {
+                    .flex;
+                    flex-direction: column;
+                }
+                .u-tags {
+                    .flex;
+                    flex-wrap: wrap;
+                    .u-tag {
+                        margin: 0 10px 10px 0;
+                    }
+                }
+            }
+        }
+        .u-desc {
+            .fz(14px,2);
+            p {
+                margin: 0;
             }
         }
     }
