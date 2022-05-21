@@ -64,4 +64,9 @@ export default {
         margin: 50px auto;
     }
 }
+@media screen and (max-width:@phone){
+    .m-about-team{
+        padding:20px;
+    }
+}
 </style>

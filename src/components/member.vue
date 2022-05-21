@@ -1,6 +1,6 @@
 <template>
     <div class="m-about-member" v-if="list && list.length">
-        <div class="u-list" v-for="(item, i) in list" :key="i">
+        <div class="u-item" v-for="(item, i) in list" :key="i">
             <el-popover popper-class="m-about-popover" placement="top-start" trigger="hover" width="280">
                 <div class="u-user">
                     <div class="u-user-info">
@@ -64,7 +64,7 @@ export default {
 .m-about-member {
     .flex;
     flex-wrap: wrap;
-    .u-list {
+    .u-item {
         .mb(40px);
         width: 25%;
     }
@@ -135,5 +135,13 @@ export default {
         }
         margin-top:5px;
     }
+}
+@media screen and (max-width:@phone){
+.m-about-member {
+    flex-direction: column;
+    .u-item {
+        width: auto;
+    }
+}
 }
 </style>
