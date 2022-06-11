@@ -1,3 +1,9 @@
+/*
+ * @Author: iRuxu
+ * @Date: 2022-05-15 10:51:05
+ * @LastEditTime: 2022-06-11 16:27:50
+ * @Description: 
+ */
 import Vue from "vue";
 import VueRouter from "vue-router";
 
@@ -16,7 +22,9 @@ const routes = [
 ]
 
 const router = new VueRouter({
-    routes
+    routes,
+    mode : 'history',
+    base : '/about/'
 });
 
 export default router;

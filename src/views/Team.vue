@@ -1,3 +1,9 @@
+<!--
+ * @Author: iRuxu
+ * @Date: 2022-05-15 10:51:05
+ * @LastEditTime: 2022-06-11 16:27:34
+ * @Description: 
+-->
 <template>
     <div class="m-about-team">
         <h1>团队</h1>
@@ -56,7 +62,7 @@ export default {
 
 <style lang="less">
 .m-about-team {
-    padding: 40px;
+    padding: 20px 40px;
 
     .u-join {
         .x;
