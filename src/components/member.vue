@@ -107,12 +107,13 @@ export default {
             border-bottom: 1px solid @border-hr;
             img {
                 .size(48px);
-                margin: 0 20px 10px 0;
+                margin: 0 15px 10px 0;
                 .r(2px);
             }
             .u-name {
                 .bold;
-                .fz(16px,2);
+                .fz(14px,1.6);
+                margin-bottom:2px;
             }
             .u-txt {
                 .flex;
