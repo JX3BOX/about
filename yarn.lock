@@ -1100,6 +1100,18 @@
     moment "^2.29.1"
     vue "^2.6.12"
 
+"@jx3box/jx3box-common@^7.5.0":
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/@jx3box/jx3box-common/-/jx3box-common-7.5.0.tgz#ecd358ff523303b08dafbef5b369f89a693ccdd1"
+  integrity sha512-zt/FCjVUEeeagoh2gnMsvHtweP5PsBiUO3qBEayVc3fTSWWauxBQj2I0F+6QUSuZvypepOdsjzpDZdnnTS3Nag==
+  dependencies:
+    axios "^0.20.0"
+    cheerio "1.0.0-rc.10"
+    element-ui "^2.13.2"
+    localforage "^1.7.3"
+    moment "^2.29.1"
+    vue "^2.6.12"
+
 "@jx3box/jx3box-data@^1.0.9", "@jx3box/jx3box-data@^1.11.1", "@jx3box/jx3box-data@^1.11.3", "@jx3box/jx3box-data@^1.11.5":
   version "1.11.5"
   resolved "https://registry.yarnpkg.com/@jx3box/jx3box-data/-/jx3box-data-1.11.5.tgz#37d6a9a824fc537cef1c4971dbefd7b73f4ec8d2"
@@ -3476,9 +3488,9 @@ decamelize@^1.2.0:
   integrity sha512-z2S+W9X73hAUUki+N+9Za2lBlun89zigOyGrsax+KUQ6wKW4ZoWpEYBkGhQjwAjjDCkWxhY0VKEhk8wzY7F5cA==
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha512-hjf+xovcEn31w/EUYdTXQh/8smFL/dzYjohQGEIgjyNavaJfBY2p5F527Bo1VPATxv0VYTUC2bOcXvqFwk78Og==
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.0.1:
   version "1.1.1"
