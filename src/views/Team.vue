@@ -8,14 +8,12 @@
     <div class="m-about-team">
         <h1>团队</h1>
 
-        <div class="m-about-team-item" :key="group" v-for="(grouplabel,group) in usergroups">
+        <div class="m-about-team-item" :key="group" v-for="(grouplabel, group) in usergroups">
             <el-divider content-position="left">{{ grouplabel }}</el-divider>
             <member :list="teammates[group]" />
         </div>
 
-        <p class="u-join">
-            ❤️ 欢迎<a href="/notice/21899" target="_blank">加入我们</a>
-        </p>
+        <p class="u-join">❤️ 欢迎<a href="/notice/21899" target="_blank">加入我们</a></p>
     </div>
 </template>
 
@@ -30,7 +28,13 @@ export default {
     data: function () {
         return {
             list: [],
-            usergroups,
+            usergroups: {
+                developer: "开发",
+                designer: "设计",
+                mp: "运营",
+                editor: "编审",
+                contributors: "贡献名单",
+            },
         };
     },
     computed: {
@@ -70,9 +74,9 @@ export default {
         margin: 50px auto;
     }
 }
-@media screen and (max-width:@phone){
-    .m-about-team{
-        padding:20px;
+@media screen and (max-width: @phone) {
+    .m-about-team {
+        padding: 20px;
     }
 }
 </style>
